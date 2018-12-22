@@ -1,0 +1,15 @@
+.article {
+    padding: 20px;
+
+    &__title {
+        padding-bottom: 10px;
+    }
+
+    &__description {
+        padding-bottom: 10px;
+    }
+
+    &__link {
+        color: blue;
+    }
+}

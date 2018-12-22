@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  font-family: 'Roboto', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+}
+
+.reader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.reader__links {
+  width: 400px;
+  height: 100%;
+  background-color: #beb9b9;
+}
+
+.reader .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+}
+
+.reader .link__url {
+  height: 100%;
+  padding: 20px;
+}
+
+.reader .link__url:hover {
+  background-color: white;
+  cursor: pointer;
+  overflow-x: visible;
+}
+
+.reader .link__delete-button {
+  height: 100%;
+}
+
+.reader .link__delete-button:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.reader__page {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: #a6f0ec;
+  overflow-y: scroll;
+}
+
+.reader .article {
+  padding: 20px;
+}
+
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+

@@ -1,0 +1,127 @@
+@mixin scrolls {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        //background-color: #FAFAFA;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #d5d4d6;
+    }
+}
+
+.appWindow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    max-height: 600px;
+
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.3);
+}
+
+.left-bar {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    width: 100%;
+    max-width: 30%;
+
+    background-color: #FAFAFA;
+
+    overflow-y: scroll;
+
+    @include scrolls;
+
+    transition: 0.5s;
+
+    &:hover {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.user {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+
+    color: white;
+
+    background-color: #212121;
+
+    &__name {
+        margin-right: 20px;
+    }
+}
+
+.form-wrapper {
+    width: 100%;
+    padding: 10px;
+
+    background-color: #FAFAFA;
+
+    .flat-form {
+        background-color: #FAFAFA;
+    }
+}
+
+.links {
+
+    background-color: #FAFAFA;
+
+    @include scrolls;
+}
+
+.link {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 0 10px;
+
+    overflow-x: hidden;
+
+    &__url {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        height: 60px;
+    }
+
+    & > * {
+        margin: 5px;
+    }
+
+    &:hover {
+        background-color: #e7e7e7;
+    }
+
+    cursor: pointer;
+}
+
+.page {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+
+    background-color: white;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    @include scrolls;
+}

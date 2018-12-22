@@ -1,0 +1,157 @@
+.landing-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.landing {
+    width: 100%;
+    height: 100%;
+
+    &__navbar {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        min-height: 60px;
+        padding: 0 40px;
+
+        color: white;
+
+        background-color: #FF7043;
+    }
+
+    &__main {
+        height: calc(100% - 60px);
+        padding: 0 10%;
+
+        background-color: whitesmoke;
+    }
+
+    &__register-form {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+
+        width: 350px;
+        height: 450px;
+        padding: 30px;
+
+        background-color: white;
+
+        box-shadow: 5px 5px 30px 0 rgba(0,0,0,0.2);
+
+        &-error {
+            margin-top: -25px;
+
+            color: #E91E63;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            padding: 5px;
+            border: 2px solid black;
+
+            font-size: 20px;
+
+            transition: 0.2s;
+
+            &:hover,
+            &:focus {
+                outline: 5px solid #E91E63;
+            }
+        }
+
+        button {
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 20px;
+
+            font-size: 20px;
+
+            background-color: white;
+
+            transition: 0.2s;
+
+            &:hover,
+            &:focus {
+                border: 2px solid #E91E63;
+
+                color: white;
+
+                background-color: #E91E63;
+
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__login-form {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        & > * {
+            margin: 5px;
+        }
+
+        input {
+            padding: 5px;
+            border: 2px solid black;
+
+            font-size: 15px;
+
+            transition: 0.2s;
+
+            &:hover,
+            &:focus {
+                outline: 5px solid #E91E63;
+            }
+        }
+
+        button  {
+            padding: 5px 15px;
+            border: 2px solid black;
+            border-radius: 20px;
+
+            font-size: 15px;
+
+            background-color: white;
+
+            transition: 0.2s;
+
+            &:hover,
+            &:focus {
+                border: 2px solid #E91E63;
+
+                color: white;
+
+                background-color: #E91E63;
+
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.mock {
+    height: 500px;
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}

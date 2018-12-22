@@ -1,0 +1,37 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    color: white;
+    font-size: 50px;
+    line-height: 20px;
+
+    p:first-child {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    background: radial-gradient(#141414, #000000e1);
+    background-size: cover;
+
+    transition: opacity 0.2s, z-index 0.2s;
+    animation: none;
+
+    &--active {
+        z-index: 999;
+    }
+
+    &--inactive {
+        opacity: 0;
+        z-index: -1;
+    }
+}

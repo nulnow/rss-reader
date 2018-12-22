@@ -1,0 +1,16 @@
+.flat-form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    height: 100%;
+    //width: 100%;
+
+    background-color: white;
+
+    & > * {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

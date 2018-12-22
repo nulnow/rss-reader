@@ -1,0 +1,38 @@
+.flat-button {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+
+    font-weight: bold;
+    background-color: white;
+
+    &:hover {
+        color: white;
+        background-color: black;
+
+        cursor: pointer;
+    }
+
+    &.danger {
+        color: #ef5350;
+        border: 2px solid #ef5350;
+
+        &:hover {
+            color: white;
+            background-color: #ef5350;
+
+            cursor: pointer;
+        }
+    }
+
+    &:disabled {
+        color: darkgray;
+        border: 2px solid darkgray;
+
+        &:hover {
+            color: darkgray;
+            border: 2px solid darkgray;
+            background-color: white;
+        }
+    }
+}

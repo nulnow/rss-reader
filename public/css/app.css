@@ -1,0 +1,507 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-size: 50px;
+  line-height: 20px;
+  background: radial-gradient(#141414, #000000e1);
+  background-size: cover;
+  -webkit-transition: opacity 0.2s, z-index 0.2s;
+  transition: opacity 0.2s, z-index 0.2s;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.preloader p:first-child {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.preloader--active {
+  z-index: 999;
+}
+
+.preloader--inactive {
+  opacity: 0;
+  z-index: -1;
+}
+
+.desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ECEFF1;
+  background-image: url(https://www.ibm.com/blogs/ibm-anz/wp-content/uploads/2017/09/horsehead-nebula-dark-nebula-constellation-orion-87646.jpeg);
+  background-size: cover;
+}
+
+.appWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  max-height: 600px;
+  -webkit-box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.left-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+  max-width: 30%;
+  background-color: #FAFAFA;
+  overflow-y: scroll;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.left-bar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.left-bar::-webkit-scrollbar-thumb {
+  background-color: #d5d4d6;
+}
+
+.left-bar:hover {
+  width: 100%;
+  max-width: 100%;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  color: white;
+  background-color: #212121;
+}
+
+.user__name {
+  margin-right: 20px;
+}
+
+.form-wrapper {
+  width: 100%;
+  padding: 10px;
+  background-color: #FAFAFA;
+}
+
+.form-wrapper .flat-form {
+  background-color: #FAFAFA;
+}
+
+.links {
+  background-color: #FAFAFA;
+}
+
+.links::-webkit-scrollbar {
+  width: 10px;
+}
+
+.links::-webkit-scrollbar-thumb {
+  background-color: #d5d4d6;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+.link__url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+.link > * {
+  margin: 5px;
+}
+
+.link:hover {
+  background-color: #e7e7e7;
+}
+
+.page {
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.page::-webkit-scrollbar {
+  width: 10px;
+}
+
+.page::-webkit-scrollbar-thumb {
+  background-color: #d5d4d6;
+}
+
+.article {
+  padding: 20px;
+}
+
+.article__title {
+  padding-bottom: 10px;
+}
+
+.article__description {
+  padding-bottom: 10px;
+}
+
+.article__link {
+  color: blue;
+}
+
+.flat-button {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.flat-button:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.flat-button.danger {
+  color: #ef5350;
+  border: 2px solid #ef5350;
+}
+
+.flat-button.danger:hover {
+  color: white;
+  background-color: #ef5350;
+  cursor: pointer;
+}
+
+.flat-button:disabled {
+  color: darkgray;
+  border: 2px solid darkgray;
+}
+
+.flat-button:disabled:hover {
+  color: darkgray;
+  border: 2px solid darkgray;
+  background-color: white;
+}
+
+.flat-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  background-color: white;
+}
+
+.flat-form > * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flat-input {
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.landing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.landing {
+  width: 100%;
+  height: 100%;
+}
+
+.landing__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+  padding: 0 40px;
+  color: white;
+  background-color: #FF7043;
+}
+
+.landing__main {
+  height: calc(100% - 60px);
+  padding: 0 10%;
+  background-color: whitesmoke;
+}
+
+.landing__register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 350px;
+  height: 450px;
+  padding: 30px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.landing__register-form-error {
+  margin-top: -25px;
+  color: #E91E63;
+}
+
+.landing__register-form h1 {
+  text-align: center;
+}
+
+.landing__register-form input {
+  padding: 5px;
+  border: 2px solid black;
+  font-size: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.landing__register-form input:hover,
+.landing__register-form input:focus {
+  outline: 5px solid #E91E63;
+}
+
+.landing__register-form button {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.landing__register-form button:hover,
+.landing__register-form button:focus {
+  border: 2px solid #E91E63;
+  color: white;
+  background-color: #E91E63;
+  outline: none;
+  cursor: pointer;
+}
+
+.landing__login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing__login-form > * {
+  margin: 5px;
+}
+
+.landing__login-form input {
+  padding: 5px;
+  border: 2px solid black;
+  font-size: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.landing__login-form input:hover,
+.landing__login-form input:focus {
+  outline: 5px solid #E91E63;
+}
+
+.landing__login-form button {
+  padding: 5px 15px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.landing__login-form button:hover,
+.landing__login-form button:focus {
+  border: 2px solid #E91E63;
+  color: white;
+  background-color: #E91E63;
+  outline: none;
+  cursor: pointer;
+}
+
+.mock {
+  height: 500px;
+}
+
+@media (max-width: 1000px) {
+  .mock {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  font-family: 'Roboto', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+}
+
+.shadow {
+  -webkit-box-shadow: 5px 5px 50px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 50px 0 rgba(0, 0, 0, 0.4);
+}
+
